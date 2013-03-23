@@ -18,7 +18,7 @@ public class Benzin1 {
 		String name;
 		double km, liter, verbrauch;
 		
-		// Die Eingabe ist etwas umst‰ndlich
+		// Die Eingabe ist etwas umst√§ndlich
 		BufferedReader in =
 			new BufferedReader(new InputStreamReader(System.in));
 
