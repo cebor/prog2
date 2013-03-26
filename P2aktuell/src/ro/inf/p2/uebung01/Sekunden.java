@@ -32,8 +32,8 @@ public class Sekunden {
 		m = Integer.parseInt(in.readLine());
 		
 		s = h * 3600 + m * 60;
+
 		
 		System.out.println("Seconds = " + s);
-		
 	}
 }
