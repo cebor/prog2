@@ -33,7 +33,6 @@ public class Sekunden {
 		
 		s = h * 3600 + m * 60;
 
-		
 		System.out.println("Seconds = " + s);
 	}
 }
