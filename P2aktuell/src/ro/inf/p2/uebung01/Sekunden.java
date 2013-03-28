@@ -9,28 +9,29 @@ import java.io.InputStreamReader;
 
 /**
  * @author felix
- *
+ * 
  */
 public class Sekunden {
 	/**
 	 * @param args
+	 * @throws IOException
+	 * @throws NumberFormatException
 	 */
-	public static void main(String[] args)
-		throws NumberFormatException, IOException {
-		
+	public static void main(String[] args) throws NumberFormatException,
+			IOException {
+
 		int h, m, s;
-		
-		BufferedReader in =
-			new BufferedReader(new InputStreamReader(System.in));
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
 		// Input Hour
 		System.out.println("Hours: ");
 		h = Integer.parseInt(in.readLine());
-		
+
 		// Input Minute
 		System.out.println("Minutes: ");
 		m = Integer.parseInt(in.readLine());
-		
+
 		s = h * 3600 + m * 60;
 
 		System.out.println("Seconds = " + s);
