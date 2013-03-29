@@ -12,17 +12,19 @@ public class Wechseln {
     public static final int[] werte =
             new int[]{200, 100, 50, 20, 10, 5, 2, 1};
 
-    int[] anzahl(int betrag) {
+    public static int[] anzahl(int betrag) {
 
         int[] array = new int[]{0, 0, 0, 0, 0, 0, 0, 0};
 
-        for (int i = 0; i <= 8; i++) {
-            while (betrag >= werte[i]) {
-                betrag -= werte[i];
+        int i = 0;
+
+        for (int wert:werte) {
+            while (betrag >= wert) {
+                betrag -= wert;
                 array[i] += 1;
             }
+            i++;
         }
-
         return array;
     }
 }
