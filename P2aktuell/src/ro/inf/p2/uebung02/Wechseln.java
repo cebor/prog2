@@ -14,6 +14,15 @@ public class Wechseln {
 
     int[] anzahl(int betrag) {
 
-    }
+        int[] array = new int[]{0, 0, 0, 0, 0, 0, 0, 0};
 
+        for (int i = 0; i <= 8; i++) {
+            while (betrag >= werte[i]) {
+                betrag -= werte[i];
+                array[i] += 1;
+            }
+        }
+
+        return array;
+    }
 }
