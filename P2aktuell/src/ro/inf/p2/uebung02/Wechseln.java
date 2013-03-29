@@ -14,7 +14,7 @@ public class Wechseln {
 
     public static int[] anzahl(int betrag) {
 
-        int[] array = new int[]{0, 0, 0, 0, 0, 0, 0, 0};
+        int[] array = new int[8];
 
         int i = 0;
 
