@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1479e8c5-fae3-495e-bde4-595e6af70952" name="Default" comment="" />
+    <list default="true" id="1479e8c5-fae3-495e-bde4-595e6af70952" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/WechselnTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/UserWechseln.java" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/UserWechseln.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/felix.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/felix.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <list id="68bc3039-11e9-4dae-a7bd-ae59843ca5b9" name="Rejected commit: Default" comment="add Wechseln" />
     <ignored path="prog2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364496181496" ignored="false" />
-    <file path="/Dummy.txt" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364552473588" ignored="false" />
+    <file path="/fragment.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364641090561" ignored="false" />
+    <file path="/Dummy.txt" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364641294838" ignored="false" />
     <file path="/Sekunden.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364496816368" ignored="false" />
     <file path="/a.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364547536788" ignored="false" />
-    <file path="/Wechseln.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364552197433" ignored="false" />
+    <file path="/Wechseln.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364641081772" ignored="false" />
     <file path="/a.groovy" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364547528363" ignored="false" />
     <file path="/a.html" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364547528363" ignored="false" />
-    <file path="/UserWechseln.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364550603299" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364556694707" ignored="false" />
+    <file path="/UserWechseln.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364641024980" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +85,36 @@
       <file leaf-file-name="Wechseln.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="69" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+            <state line="6" column="10" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserWechseln.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WechselnTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/WechselnTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.2058319">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserWechseln.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/UserWechseln.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="48" selection-start="113" selection-end="113" vertical-scroll-proportion="0.10215664">
+            <state line="10" column="20" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sekunden.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung01/Sekunden.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="81" selection-start="378" selection-end="451" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,14 +151,15 @@
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung01/Sekunden.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/UserWechseln.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java" />
+        <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/WechselnTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1617" />
-    <option name="height" value="1055" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1615" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -142,7 +168,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -162,7 +188,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,20 +252,22 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="183" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="185" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="183" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="183" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="188" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="983" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="983" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="983" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="188" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="185" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -254,11 +281,20 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ro.inf.p2.uebung02" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.UserWechseln">
     <configuration default="false" name="UserWechseln" type="Application" factoryName="Application" temporary="true">
@@ -291,19 +327,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -329,6 +352,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -415,8 +451,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1617" height="1055" extended-state="6" />
-    <editor active="false" />
+    <frame x="65" y="24" width="1615" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5512679" sideWeight="0.49776927" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -426,12 +462,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28776187" sideWeight="0.49776927" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.49776927" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32855567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15041427" sideWeight="0.44873208" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15041427" sideWeight="0.6714443" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2094818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -478,7 +514,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="some improvements" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -494,6 +530,7 @@
     <MESSAGE value="add Wechseln" />
     <MESSAGE value="add Wechseln.anzahl method" />
     <MESSAGE value="fix" />
+    <MESSAGE value="some improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -503,13 +540,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung01/Hello2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung01/Sekunden.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="33" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
@@ -588,21 +618,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung01/Sekunden.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="374" selection-end="374" vertical-scroll-proportion="0.30646992">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="69" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+        <state line="24" column="81" selection-start="378" selection-end="451" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/UserWechseln.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="48" selection-start="113" selection-end="113" vertical-scroll-proportion="0.10215664">
+        <state line="10" column="20" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/WechselnTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.2058319">
           <folding />
         </state>
       </provider>
