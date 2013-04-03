@@ -18,13 +18,14 @@ public class Wechseln {
 
         int i = 0;
 
-        for (int wert:werte) {
+        for (int wert : werte) {
             while (betrag >= wert) {
                 betrag -= wert;
-                array[i] += 1;
+                array[i]++;
             }
             i++;
         }
+
         return array;
     }
 }

@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * User: felix
  * Date: 3/29/13
  * Time: 10:34 AM
- * Cents to Coin Calculator.
+ * Cents to Coins Calculator.
  */
 public class UserWechseln {
     public static void main(String[] args) throws IOException {
