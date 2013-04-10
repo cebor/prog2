@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1479e8c5-fae3-495e-bde4-595e6af70952" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="68bc3039-11e9-4dae-a7bd-ae59843ca5b9" name="Rejected commit: Default" comment="add Wechseln" />
     <ignored path="prog2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365608545116" ignored="false" />
-    <file path="/Dummy.txt" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365609569453" ignored="false" />
+    <file path="/Dummy.txt" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365610083881" ignored="false" />
     <file path="/Sekunden.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364496816368" ignored="false" />
     <file path="/a.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364547536788" ignored="false" />
     <file path="/Wechseln.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364988579294" ignored="false" />
@@ -18,7 +19,7 @@
     <file path="/UserWechseln.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364977476004" ignored="false" />
     <file path="/WechselnTest.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365596731216" ignored="false" />
     <file path="/TestStringUtil.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365169156416" ignored="false" />
-    <file path="/TestPali.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365175647549" ignored="false" />
+    <file path="/TestPali.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365612104761" ignored="false" />
     <file path="/Pali.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365599054644" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,10 +87,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Pali.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Pali.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="48" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.07575758">
               <folding>
                 <element signature="docComment;class#Pali#0" expanded="false" />
               </folding>
@@ -97,12 +98,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestPali.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestPali.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="102" selection-start="678" selection-end="678" vertical-scroll-proportion="0.54882157">
+            <state line="24" column="86" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;class#TestPali#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -132,8 +134,8 @@
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestStringUtil.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/WechselnTest.java" />
-        <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" />
+        <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java" />
       </list>
     </option>
   </component>
@@ -550,7 +552,11 @@
       <created>1365609574424</created>
       <updated>1365609574424</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix">
+      <created>1365610086427</created>
+      <updated>1365610086427</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -622,7 +628,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add TestPali &amp; Pali" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -638,10 +644,10 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="add Wechseln" />
     <MESSAGE value="add Wechseln.anzahl method" />
-    <MESSAGE value="fix" />
     <MESSAGE value="some improvements" />
     <MESSAGE value="add test" />
     <MESSAGE value="add TestPali &amp; Pali" />
+    <MESSAGE value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -727,20 +733,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java">
+    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="48" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+        <state line="24" column="86" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="docComment;class#Pali#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#TestPali#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java">
+    <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="102" selection-start="678" selection-end="678" vertical-scroll-proportion="0.54882157">
+        <state line="9" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.07575758">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Pali#0" expanded="false" />
           </folding>
         </state>
       </provider>
