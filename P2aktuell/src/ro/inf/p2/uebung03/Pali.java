@@ -18,8 +18,6 @@ public class Pali {
     public static boolean isPalindrome(String s) {
         s = filter(s);
 
-        String s2 = new StringBuffer(s).reverse().toString();
-
-        return s.equals(s2);
+        return s.equals(new StringBuffer(s).reverse().toString());
     }
 }

@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1479e8c5-fae3-495e-bde4-595e6af70952" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" afterPath="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="68bc3039-11e9-4dae-a7bd-ae59843ca5b9" name="Rejected commit: Default" comment="add Wechseln" />
     <ignored path="prog2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365608545116" ignored="false" />
-    <file path="/Dummy.txt" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365609393661" ignored="false" />
+    <file path="/Dummy.txt" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1365609569453" ignored="false" />
     <file path="/Sekunden.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364496816368" ignored="false" />
     <file path="/a.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364547536788" ignored="false" />
     <file path="/Wechseln.java" changelist="1479e8c5-fae3-495e-bde4-595e6af70952" time="1364988579294" ignored="false" />
@@ -92,7 +89,7 @@
       <file leaf-file-name="Pali.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+            <state line="23" column="48" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="docComment;class#Pali#0" expanded="false" />
               </folding>
@@ -103,7 +100,7 @@
       <file leaf-file-name="TestPali.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="72" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.8664383">
+            <state line="26" column="102" selection-start="678" selection-end="678" vertical-scroll-proportion="0.54882157">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,8 +132,8 @@
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/Wechseln.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestStringUtil.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung02/WechselnTest.java" />
-        <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" />
         <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java" />
+        <option value="$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java" />
       </list>
     </option>
   </component>
@@ -549,7 +546,11 @@
       <created>1364992836840</created>
       <updated>1364992836840</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add TestPali &amp; Pali">
+      <created>1365609574424</created>
+      <updated>1365609574424</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -565,13 +566,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28665787" sideWeight="0.49776927" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.49776927" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32745314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32745314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15423837" sideWeight="0.67254686" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3164278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15423837" sideWeight="0.68357223" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3164278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -728,7 +729,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/Pali.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+        <state line="23" column="48" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="docComment;class#Pali#0" expanded="false" />
           </folding>
@@ -737,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/P2aktuell/src/ro/inf/p2/uebung03/TestPali.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="72" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.8664383">
+        <state line="26" column="102" selection-start="678" selection-end="678" vertical-scroll-proportion="0.54882157">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
