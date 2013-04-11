@@ -9,8 +9,7 @@ package ro.inf.p2.uebung03;
  */
 public class Pali {
     public static String filter(String s) {
-        s = s.toLowerCase();
-        s = s.replaceAll("[^a-z]+", "");
+        s = s.toLowerCase().replaceAll("[^a-z]+", "");
 
         return s;
     }
