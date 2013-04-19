@@ -13,11 +13,11 @@ import junit.framework.TestCase;
  */
 public class TestRational extends TestCase {
 
-	//	Initialisierung Logger
-	private static Logger logger =
-		Logger.getLogger(TestRational.class.getName());
+    //	Initialisierung Logger
+    private static Logger logger =
+        Logger.getLogger(TestRational.class.getName());
 
-	public void testConstructors() {
+    public void testConstructors() {
 
         Rational r1 = new Rational();
         assertTrue(r1.getNumerator() == 0 && r1.getDenominator() == 1);
@@ -59,9 +59,9 @@ public class TestRational extends TestCase {
         }
 
         logger.info("Test Rational testConstructors erfolgreich!");
-	}
+    }
 
-	public void testArithmetic() {
+    public void testArithmetic() {
 
         Rational r1 = new Rational(1, 2);
         Rational r2 = new Rational(2, 3);
@@ -91,6 +91,6 @@ public class TestRational extends TestCase {
         assertEquals(d1, 0.75, 0.000001);  // zu vergleichende doubles, Delta
 
         logger.info("Test Rational testArithmetic erfolgreich!");
-	}
+    }
 
 }

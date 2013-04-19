@@ -17,7 +17,7 @@ public class Benzin1 {
 		throws NumberFormatException, IOException {
 		String name;
 		double km, liter, verbrauch;
-		
+
 		// Die Eingabe ist etwas umständlich
 		BufferedReader in =
 			new BufferedReader(new InputStreamReader(System.in));
@@ -31,7 +31,7 @@ public class Benzin1 {
 		liter = Double.parseDouble(in.readLine());
 		verbrauch = liter / km * 100;
 		System.out.println("Verbrauch = " + verbrauch);
-						
+
 		if (verbrauch > OBERGRENZE)
 			System.out.println(name + ", Du bist ein Energieverschwender!!");
 

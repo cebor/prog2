@@ -13,11 +13,11 @@ import java.util.logging.Logger;
  */
 public class TestBigRational extends TestCase {
 
-	//	Initialisierung Logger
-	private static Logger logger =
-		Logger.getLogger(TestBigRational.class.getName());
+    //	Initialisierung Logger
+    private static Logger logger =
+        Logger.getLogger(TestBigRational.class.getName());
 
-	public void testConstructors() {
+    public void testConstructors() {
 
         BigRational r1 = new BigRational();
         assertTrue(r1.getNumerator().longValue() == 0 && r1.getDenominator().longValue() == 1);
@@ -59,9 +59,9 @@ public class TestBigRational extends TestCase {
         }
 
         logger.info("Test Rational testConstructors erfolgreich!");
-	}
+    }
 
-	public void testArithmetic() {
+    public void testArithmetic() {
 
         BigRational r1 = new BigRational(1, 2);
         BigRational r2 = new BigRational(2, 3);
@@ -91,6 +91,5 @@ public class TestBigRational extends TestCase {
         assertEquals(d1, 0.75, 0.000001);  // zu vergleichende doubles, Delta
 
         logger.info("Test Rational testArithmetic erfolgreich!");
-        }
-
+    }
 }
