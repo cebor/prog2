@@ -217,10 +217,7 @@ public class Rational {
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
     public Rational subtract(Rational val) {
-        return new Rational(
-                numerator * val.getDenominator() - val.getNumerator() * denominator,
-                denominator * val.getDenominator()
-        );
+        return this.add(val.negate());
     }
 
     /**
@@ -244,10 +241,7 @@ public class Rational {
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
     public Rational divide(Rational val) {
-        return new Rational(
-                numerator * val.getDenominator(),
-                denominator * val.getNumerator()
-        );
+        return this.multiply(val.invert());
     }
 
 }

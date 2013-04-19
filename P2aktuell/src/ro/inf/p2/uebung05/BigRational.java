@@ -229,10 +229,7 @@ public class BigRational implements Comparable<BigRational> {
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
     public BigRational subtract(BigRational val) {
-        return new BigRational(
-                numerator.multiply(val.getDenominator()).subtract(val.getNumerator().multiply(denominator)),
-                denominator.multiply(val.getDenominator())
-        );
+        return this.add(val.negate());
     }
 
     /**
@@ -256,10 +253,7 @@ public class BigRational implements Comparable<BigRational> {
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
     public BigRational divide(BigRational val) {
-        return new BigRational(
-                numerator.multiply(val.getDenominator()),
-                denominator.multiply(val.getNumerator())
-        );
+        return this.multiply(val.invert());
     }
 
     @Override
