@@ -269,16 +269,16 @@ public class BigRational implements Comparable<BigRational> {
 
         BigRational that = (BigRational) x;
 
-        if (denominator != null ? !denominator.equals(that.denominator) : that.denominator != null) return false;
-        if (numerator != null ? !numerator.equals(that.numerator) : that.numerator != null) return false;
+        if (!denominator.equals(that.denominator)) return false;
+        if (!numerator.equals(that.numerator)) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = numerator != null ? numerator.hashCode() : 0;
-        result = 31 * result + (denominator != null ? denominator.hashCode() : 0);
+        int result = numerator.hashCode();
+        result = 31 * result + denominator.hashCode();
         return result;
     }
 
