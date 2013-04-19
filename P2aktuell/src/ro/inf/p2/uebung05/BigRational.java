@@ -3,8 +3,9 @@
  * @author 		BrM / MD nach Vorlagen von Hue / FdR / Sid / Weigend
  * Zweck:		Klasse Rational mit vielf�ltigen Methoden
  */
-package ro.inf.p2.uebung04;
+package ro.inf.p2.uebung05;
 
+import java.math.BigInteger;
 import java.util.StringTokenizer;
 
 
@@ -13,15 +14,15 @@ import java.util.StringTokenizer;
  * Diese Klasse ist immutable. Instanzen können nach der Konstruktion nicht mehr verändert werden
  * (es gibt keine set-Methoden).
  */
-public class Rational {
+public class BigRational implements Comparable<BigRational> {
     // Konstanten
     public static final String DELIMITER = "/"; // Bruchstrich
     private final static long PRECISION = 10000000l;  // am Ende l wie long
 
 
     //  Zähler und Nenner
-    private long numerator;
-    private long denominator;
+    private BigInteger numerator;
+    private BigInteger denominator;
 
     // private Hilfsmethoden
 
@@ -32,16 +33,15 @@ public class Rational {
      * @param b (positive) ganze Zahl
      * @return größter gemeinsamer Teiler
      */
-    private static long gcd(long a, long b) {
-        a = Math.abs(a);
-        b = Math.abs(b);
-        if (a < b)
-            return gcd(b, a);
-        if (b == 0)
+    private static BigInteger gcd(BigInteger a, BigInteger b) {
+        a = a.abs(); // sonst wirft mod() eine ArithmeticException
+        b = b.abs();
+        if (a.compareTo(b) < 0) return gcd(b, a);
+        if (b.compareTo(BigInteger.ZERO) == 0)
             return a; // Null wird von jeder Zahl geteilt
-        long c = 1;
-        while (c != 0) {
-            c = a % b;
+        BigInteger c = BigInteger.ONE;
+        while (c.compareTo(BigInteger.ZERO) != 0) {
+            c = a.mod(b);
             a = b;
             b = c;
         }
@@ -52,18 +52,18 @@ public class Rational {
      * normiert den Bruch (kürzt und macht den Nenner positiv)
      */
     private void norm() {
-        long gcd = gcd(numerator, denominator);
+        BigInteger gcd = gcd(numerator, denominator);
         // kürzen
 
-        numerator = numerator / gcd;
+        numerator = numerator.divide(gcd);
 
-        denominator = denominator / gcd;
+        denominator = denominator.divide(gcd);
 
         // Nenner positiv machen
 
-        if (denominator < 0) {
-            numerator = -numerator;
-            denominator = -denominator;
+        if (denominator.compareTo(BigInteger.ZERO) < 0) {
+            numerator = numerator.negate();
+            denominator = denominator.negate();
         }
     }
 
@@ -73,10 +73,10 @@ public class Rational {
     /**
      * default Vorbelegung (0/1)
      */
-    public Rational() {
+    public BigRational() {
 
-        numerator = 0;
-        denominator = 1;
+        numerator = BigInteger.ZERO;
+        denominator = BigInteger.ONE;
 
     }
 
@@ -86,7 +86,7 @@ public class Rational {
      * @param num Zähler
      * @param den Nenner
      */
-    public Rational(long num, long den) {
+    public BigRational(BigInteger num, BigInteger den) {
 
         numerator = num;
         denominator = den;
@@ -99,8 +99,8 @@ public class Rational {
      *
      * @param val long
      */
-    public Rational(long val) {
-        this(val, 1);
+    public BigRational(BigInteger val) {
+        this(val, BigInteger.ONE);
     }
 
     /**
@@ -108,8 +108,8 @@ public class Rational {
      *
      * @param val double-Wert
      */
-    public Rational(double val) {
-        this((long) (val * PRECISION), PRECISION);
+    public BigRational(Double val) {
+        this(BigInteger.valueOf((long) (val * PRECISION)), BigInteger.valueOf(PRECISION));
 
         norm();
     }
@@ -119,11 +119,11 @@ public class Rational {
      *
      * @param val String
      */
-    public Rational(String val) {
+    public BigRational(String val) {
         StringTokenizer tok = new StringTokenizer(val, DELIMITER);
 
-        numerator = Long.parseLong(tok.nextToken());
-        denominator = Long.parseLong(tok.nextToken());
+        numerator = new BigInteger(tok.nextToken());
+        denominator = new BigInteger(tok.nextToken());
 
         norm();
     }
@@ -135,7 +135,7 @@ public class Rational {
      *
      * @return Zähler
      */
-    public long getNumerator() {
+    public BigInteger getNumerator() {
 
         return numerator;
 
@@ -146,7 +146,7 @@ public class Rational {
      *
      * @return Nenner
      */
-    public long getDenominator() {
+    public BigInteger getDenominator() {
 
         return denominator;
 
@@ -160,7 +160,7 @@ public class Rational {
      * @return die Rationalzahl als Double
      */
     public double doubleValue() {
-        return ((double) numerator / denominator);
+        return numerator.doubleValue() / denominator.doubleValue();
     }
 
     /**
@@ -177,8 +177,8 @@ public class Rational {
      *
      * @return den negativen Bruch
      */
-    public Rational negate() {
-        return new Rational(-numerator, denominator);
+    public BigRational negate() {
+        return new BigRational(numerator.negate(), denominator);
     }
 
     /**
@@ -186,8 +186,8 @@ public class Rational {
      *
      * @return den Kehrbruch (aus a/b wird b/a)
      */
-    public Rational invert() {
-        return new Rational(denominator, numerator);
+    public BigRational invert() {
+        return new BigRational(denominator, numerator);
     }
 
     // Bruchrechnen
@@ -198,10 +198,10 @@ public class Rational {
      * @param val der Bruch (b), welcher addiert werden soll.
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
-    public Rational add(Rational val) {
-        return new Rational(
-                numerator * val.getDenominator() + val.getNumerator() * denominator,
-                denominator * val.getDenominator()
+    public BigRational add(BigRational val) {
+        return new BigRational(
+                numerator.multiply(val.getDenominator()).add(val.getNumerator().multiply(denominator)),
+                denominator.multiply(val.getDenominator())
         );
         // die Normierung erfolgt im Konstruktor
     }
@@ -216,10 +216,10 @@ public class Rational {
      * @param val der Bruch (b), der abgezogen wird
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
-    public Rational subtract(Rational val) {
-        return new Rational(
-                numerator * val.getDenominator() - val.getNumerator() * denominator,
-                denominator * val.getDenominator()
+    public BigRational subtract(BigRational val) {
+        return new BigRational(
+                numerator.multiply(val.getDenominator()).subtract(val.getNumerator().multiply(denominator)),
+                denominator.multiply(val.getDenominator())
         );
     }
 
@@ -230,10 +230,10 @@ public class Rational {
      * @param val der Bruch (b)
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
-    public Rational multiply(Rational val) {
-        return new Rational(
-                numerator * val.getNumerator(),
-                denominator * val.getDenominator()
+    public BigRational multiply(BigRational val) {
+        return new BigRational(
+                numerator.multiply(val.getNumerator()),
+                denominator.multiply(val.getDenominator())
         );
     }
 
@@ -243,11 +243,22 @@ public class Rational {
      * @param val der Bruch durch den geteilt wird.
      * @return Eine neue Rationalzahl als Ergebnis der Operation
      */
-    public Rational divide(Rational val) {
-        return new Rational(
-                numerator * val.getDenominator(),
-                denominator * val.getNumerator()
+    public BigRational divide(BigRational val) {
+        return new BigRational(
+                numerator.multiply(val.getDenominator()),
+                denominator.multiply(val.getNumerator())
         );
     }
 
+    public boolean equals(Object x) {
+        return false;
+    }
+
+    public int hashCode() {
+        return 0;
+    }
+
+    public int compareTo(BigRational x) {
+        return 0;
+    }
 }
