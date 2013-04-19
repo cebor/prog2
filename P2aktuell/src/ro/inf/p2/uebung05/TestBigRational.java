@@ -92,4 +92,31 @@ public class TestBigRational extends TestCase {
 
         logger.info("Test Rational testArithmetic erfolgreich!");
     }
+
+    public  void testMethods() {
+
+        BigRational r1 = new BigRational(1, 2);
+        BigRational r2 = new BigRational(2, 3);
+        BigRational r3 = new BigRational(1, 2);
+        BigRational r4 = new BigRational(3, 2);
+        BigRational r5 = new BigRational(5, 2);
+
+
+        // test .equals()
+        assertTrue(r1.equals(r1));
+        assertTrue(r1.equals(r3));
+        assertFalse(r1.equals(r2));
+
+        assertEquals(r1, r3);
+        assertEquals(r1, r1);
+
+
+        // test .compareTo()
+        assertEquals(r1.compareTo(r4), -1);
+        assertEquals(r1.compareTo(r3),  0);
+        assertEquals(r4.compareTo(r1),  1);
+
+
+        logger.info("Test Rational testMethods erfolgreich!");
+    }
 }

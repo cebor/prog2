@@ -282,7 +282,11 @@ public class BigRational implements Comparable<BigRational> {
         return result;
     }
 
+    @Override
     public int compareTo(BigRational x) {
-        return 0;
+        if (this.equals(x))
+            return 0;
+
+        return new Double(this.doubleValue()).compareTo(x.doubleValue());
     }
 }
