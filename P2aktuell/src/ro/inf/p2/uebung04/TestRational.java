@@ -6,7 +6,6 @@
 package ro.inf.p2.uebung04;
 
 import java.util.logging.Logger;
-
 import junit.framework.TestCase;
 
 /**

@@ -1,7 +1,7 @@
 /*
  * Created on 	23.03.2010
  * @author 		BrM / MD nach Vorlagen von Hue / FdR / Sid / Weigend
- * Zweck:		Klasse Rational mit vielf�ltigen Methoden
+ * Zweck:		Klasse Rational mit vielfältigen Methoden
  */
 package ro.inf.p2.uebung04;
 

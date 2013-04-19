@@ -1,7 +1,7 @@
 /*
  * Created on 	23.03.2010
  * @author 		BrM / MD nach Vorlagen von Hue / FdR / Sid / Weigend
- * Zweck:		Klasse Rational mit vielf�ltigen Methoden
+ * Zweck:		Klasse Rational mit vielfältigen Methoden
  */
 package ro.inf.p2.uebung05;
 
@@ -86,6 +86,20 @@ public class BigRational implements Comparable<BigRational> {
      * @param num Zähler
      * @param den Nenner
      */
+    public BigRational(long num, long den) {
+
+        numerator = BigInteger.valueOf(num);
+        denominator = BigInteger.valueOf(den);
+
+        norm();
+    }
+
+    /**
+     * Rationalzahl mit Zähler und Nenner vom Typ BigInteger
+     *
+     * @param num Zähler
+     * @param den Nenner
+     */
     public BigRational(BigInteger num, BigInteger den) {
 
         numerator = num;
@@ -99,8 +113,8 @@ public class BigRational implements Comparable<BigRational> {
      *
      * @param val long
      */
-    public BigRational(BigInteger val) {
-        this(val, BigInteger.ONE);
+    public BigRational(long val) {
+        this(val, 1);
     }
 
     /**
@@ -108,10 +122,8 @@ public class BigRational implements Comparable<BigRational> {
      *
      * @param val double-Wert
      */
-    public BigRational(Double val) {
-        this(BigInteger.valueOf((long) (val * PRECISION)), BigInteger.valueOf(PRECISION));
-
-        norm();
+    public BigRational(double val) {
+        this((long) (val * PRECISION), PRECISION);
     }
 
     /**
@@ -250,12 +262,24 @@ public class BigRational implements Comparable<BigRational> {
         );
     }
 
+    @Override
     public boolean equals(Object x) {
-        return false;
+        if (this == x) return true;
+        if (!(x instanceof BigRational)) return false;
+
+        BigRational that = (BigRational) x;
+
+        if (denominator != null ? !denominator.equals(that.denominator) : that.denominator != null) return false;
+        if (numerator != null ? !numerator.equals(that.numerator) : that.numerator != null) return false;
+
+        return true;
     }
 
+    @Override
     public int hashCode() {
-        return 0;
+        int result = numerator != null ? numerator.hashCode() : 0;
+        result = 31 * result + (denominator != null ? denominator.hashCode() : 0);
+        return result;
     }
 
     public int compareTo(BigRational x) {
