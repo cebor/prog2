@@ -6,6 +6,8 @@
 package ro.inf.p2.uebung05;
 
 import junit.framework.TestCase;
+
+import java.math.BigInteger;
 import java.util.logging.Logger;
 
 /**
@@ -15,7 +17,7 @@ public class TestBigRational extends TestCase {
 
     //	Initialisierung Logger
     private static Logger logger =
-        Logger.getLogger(TestBigRational.class.getName());
+            Logger.getLogger(TestBigRational.class.getName());
 
     public void testConstructors() {
 
@@ -25,7 +27,7 @@ public class TestBigRational extends TestCase {
         assertTrue(r2.getNumerator().longValue() == 1 && r2.getDenominator().longValue() == 2);
         BigRational r6 = new BigRational(5, -15);
         assertTrue(r6.getNumerator().longValue() == -1 && r6.getDenominator().longValue() == 3);
-        r2 = new BigRational(3,6);
+        r2 = new BigRational(3, 6);
         assertTrue(r2.getNumerator().longValue() == 1 && r2.getDenominator().longValue() == 2);
         BigRational r3 = new BigRational(2);
         assertTrue(r3.getNumerator().longValue() == 2 && r3.getDenominator().longValue() == 1);
@@ -39,22 +41,33 @@ public class TestBigRational extends TestCase {
         r5 = new BigRational("4/-6");
         logger.info(r5.toString());
         assertTrue(r5.getNumerator().longValue() == -2 && r5.getDenominator().longValue() == 3);
+
+        // Tests for BigIntegers
+        BigInteger b1 = new BigInteger("22222222222222222222222222222222222222222222222222222222222222222222222222222");
+        BigInteger b2 = new BigInteger("33333333333333333333333333333333333333333333333333333333333333333333333333333");
+        r1 = new BigRational(b1, b2);
+        r2 = new BigRational(b1);
+        assertEquals(r1.getNumerator(), BigInteger.valueOf(2));
+        assertEquals(r1.getDenominator(), BigInteger.valueOf(3));
+        assertEquals(r2.getNumerator(), b1);
+        assertEquals(r2.getDenominator(), BigInteger.ONE);
+
         try {
             r5 = new BigRational("4");
             fail();
-        } catch (Exception e){
+        } catch (Exception e) {
             logger.info("Exception erkannt");
         }
         try {
             r5 = new BigRational("4/v");
             fail();
-        } catch (Exception e){
+        } catch (Exception e) {
             logger.info("Exception erkannt");
         }
         try {
             r5 = new BigRational("4:6");
             fail();
-        } catch (Exception e){
+        } catch (Exception e) {
             logger.info("Exception erkannt");
         }
 
@@ -93,7 +106,7 @@ public class TestBigRational extends TestCase {
         logger.info("Test Rational testArithmetic erfolgreich!");
     }
 
-    public  void testMethods() {
+    public void testMethods() {
 
         BigRational r1 = new BigRational(1, 2);
         BigRational r2 = new BigRational(2, 3);
@@ -101,21 +114,15 @@ public class TestBigRational extends TestCase {
         BigRational r4 = new BigRational(3, 2);
         BigRational r5 = new BigRational(5, 2);
 
-
         // test .equals()
-        assertTrue(r1.equals(r1));
-        assertTrue(r1.equals(r3));
-        assertFalse(r1.equals(r2));
-
         assertEquals(r1, r3);
         assertEquals(r1, r1);
-
+        assertFalse(r1.equals(r2));
 
         // test .compareTo()
-        assertEquals(r1.compareTo(r4), -1);
-        assertEquals(r1.compareTo(r3),  0);
-        assertEquals(r4.compareTo(r1),  1);
-
+        assertEquals(r1.compareTo(r4), -1);  // kleiner
+        assertEquals(r1.compareTo(r3), 0);  // gleich
+        assertEquals(r4.compareTo(r1), 1);  // größer
 
         logger.info("Test Rational testMethods erfolgreich!");
     }

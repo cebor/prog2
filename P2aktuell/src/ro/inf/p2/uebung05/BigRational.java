@@ -81,20 +81,6 @@ public class BigRational implements Comparable<BigRational> {
     }
 
     /**
-     * Rationalzahl mit Zähler und Nenner vom Typ long
-     *
-     * @param num Zähler
-     * @param den Nenner
-     */
-    public BigRational(long num, long den) {
-
-        numerator = BigInteger.valueOf(num);
-        denominator = BigInteger.valueOf(den);
-
-        norm();
-    }
-
-    /**
      * Rationalzahl mit Zähler und Nenner vom Typ BigInteger
      *
      * @param num Zähler
@@ -106,6 +92,25 @@ public class BigRational implements Comparable<BigRational> {
         denominator = den;
 
         norm();
+    }
+
+    /**
+     * Rationalzahl mit Zähler und Nenner vom Typ long
+     *
+     * @param num Zähler
+     * @param den Nenner
+     */
+    public BigRational(long num, long den) {
+        this(BigInteger.valueOf(num), BigInteger.valueOf(den));
+    }
+
+    /**
+     * Rationalzahl aus BigInteger mit Nenner 1
+     *
+     * @param val BigInteger
+     */
+    public BigRational(BigInteger val) {
+        this(val, BigInteger.ONE);
     }
 
     /**
@@ -148,9 +153,7 @@ public class BigRational implements Comparable<BigRational> {
      * @return Zähler
      */
     public BigInteger getNumerator() {
-
         return numerator;
-
     }
 
     /**
@@ -159,9 +162,7 @@ public class BigRational implements Comparable<BigRational> {
      * @return Nenner
      */
     public BigInteger getDenominator() {
-
         return denominator;
-
     }
 
     // einfache Umwandlungen
