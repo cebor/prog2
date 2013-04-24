@@ -177,15 +177,6 @@ public class BigRational implements Comparable<BigRational> {
     }
 
     /**
-     * Ermittlung der Stringdarstellung
-     *
-     * @return eine Stringdarstellung der Rationalzahl der Form "a/b"
-     */
-    public String toString() {
-        return numerator + "/" + denominator;
-    }
-
-    /**
      * Negation = Multiplikation mit -1
      *
      * @return den negativen Bruch
@@ -257,6 +248,22 @@ public class BigRational implements Comparable<BigRational> {
         return this.multiply(val.invert());
     }
 
+    /**
+     * Ermittlung der Stringdarstellung
+     *
+     * @return eine Stringdarstellung der Rationalzahl der Form "a/b"
+     */
+    @Override
+    public String toString() {
+        return numerator + "/" + denominator;
+    }
+
+    /**
+     * Vergleicht auf Gleicheit
+     *
+     * @param x BigRational
+     * @return true / false
+     */
     @Override
     public boolean equals(Object x) {
         if (this == x) return true;
@@ -270,6 +277,10 @@ public class BigRational implements Comparable<BigRational> {
         return true;
     }
 
+    /**
+     *
+     * @return HashCode
+     */
     @Override
     public int hashCode() {
         int result = numerator.hashCode();
@@ -277,6 +288,12 @@ public class BigRational implements Comparable<BigRational> {
         return result;
     }
 
+    /**
+     * Prüft ob Bruch kleiner/größer oder gleich
+     *
+     * @param x BigRational
+     * @return
+     */
     @Override
     public int compareTo(BigRational x) {
         if (this.equals(x))

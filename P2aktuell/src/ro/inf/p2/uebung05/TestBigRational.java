@@ -121,8 +121,8 @@ public class TestBigRational extends TestCase {
 
         // test .compareTo()
         assertEquals(r1.compareTo(r4), -1);  // kleiner
-        assertEquals(r1.compareTo(r3), 0);  // gleich
-        assertEquals(r4.compareTo(r1), 1);  // größer
+        assertEquals(r1.compareTo(r3), 0);   // gleich
+        assertEquals(r4.compareTo(r1), 1);   // größer
 
         logger.info("Test Rational testMethods erfolgreich!");
     }
