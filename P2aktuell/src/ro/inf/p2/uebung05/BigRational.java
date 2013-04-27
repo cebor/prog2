@@ -271,10 +271,7 @@ public class BigRational implements Comparable<BigRational> {
 
         BigRational that = (BigRational) x;
 
-        if (!denominator.equals(that.denominator)) return false;
-        if (!numerator.equals(that.numerator)) return false;
-
-        return true;
+        return denominator.equals(that.denominator) && numerator.equals(that.numerator);
     }
 
     /**
@@ -292,13 +289,13 @@ public class BigRational implements Comparable<BigRational> {
      * Prüft ob Bruch kleiner/größer oder gleich
      *
      * @param x BigRational
-     * @return
+     * @return -1: smaller / 0: equals / 1: greater
      */
     @Override
     public int compareTo(BigRational x) {
         if (this.equals(x))
             return 0;
 
-        return new Double(this.doubleValue()).compareTo(x.doubleValue());
+        return numerator.multiply(x.denominator).compareTo(x.numerator.multiply(denominator));
     }
 }
