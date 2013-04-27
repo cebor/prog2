@@ -112,7 +112,7 @@ public class TestBigRational extends TestCase {
         BigRational r2 = new BigRational(2, 3);
         BigRational r3 = new BigRational(1, 2);
         BigRational r4 = new BigRational(3, 2);
-        BigRational r5 = new BigRational(5, 2);
+        BigRational r5 = new BigRational(2, 4);
 
         // test .equals()
         assertEquals(r1, r3);
@@ -123,6 +123,10 @@ public class TestBigRational extends TestCase {
         assertEquals(r1.compareTo(r4), -1);  // kleiner
         assertEquals(r1.compareTo(r3), 0);   // gleich
         assertEquals(r4.compareTo(r1), 1);   // größer
+
+
+        // test .hashCode()
+        assertEquals(r1.hashCode(), r5.hashCode());
 
         logger.info("Test Rational testMethods erfolgreich!");
     }
