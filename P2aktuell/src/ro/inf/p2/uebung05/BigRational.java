@@ -275,8 +275,9 @@ public class BigRational implements Comparable<BigRational> {
     }
 
     /**
+     * Erzeugt HashCode
      *
-     * @return HashCode
+     * @return HashCode (int)
      */
     @Override
     public int hashCode() {

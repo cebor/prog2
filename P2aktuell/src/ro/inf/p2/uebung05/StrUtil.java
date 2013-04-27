@@ -11,6 +11,13 @@ import java.util.StringTokenizer;
  */
 public class StrUtil {
 
+    /**
+     * StringTokens to Array
+     *
+     * @param val String
+     * @param del Delimiter
+     * @return array of strings
+     */
     public static String[] strtokenToArray(String val, String del) {
         StringTokenizer tok = new StringTokenizer(val, del);
 
@@ -26,6 +33,12 @@ public class StrUtil {
         return s;
     }
 
+    /**
+     * Array of Strings to String with Space as Delimiter
+     *
+     * @param val Array of Strings
+     * @return String
+     */
     public static String strarryToString(String[] val) {
         StringBuffer s = new StringBuffer();
 
