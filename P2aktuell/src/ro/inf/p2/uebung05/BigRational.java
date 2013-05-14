@@ -265,13 +265,14 @@ public class BigRational implements Comparable<BigRational> {
      * @return true / false
      */
     @Override
-    public boolean equals(Object x) {
-        if (this == x) return true;
-        if (!(x instanceof BigRational)) return false;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
-        BigRational that = (BigRational) x;
+        BigRational that = (BigRational) o;
 
         return denominator.equals(that.denominator) && numerator.equals(that.numerator);
+
     }
 
     /**
@@ -294,8 +295,7 @@ public class BigRational implements Comparable<BigRational> {
      */
     @Override
     public int compareTo(BigRational x) {
-        if (this.equals(x))
-            return 0;
+        if (this.equals(x)) return 0;
 
         return numerator.multiply(x.denominator).compareTo(x.numerator.multiply(denominator));
     }

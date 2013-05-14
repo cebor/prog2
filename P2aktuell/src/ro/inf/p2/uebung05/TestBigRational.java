@@ -117,6 +117,7 @@ public class TestBigRational extends TestCase {
         // test .equals()
         assertEquals(r1, r3);
         assertEquals(r1, r1);
+        assertEquals(r1, r5);
         assertFalse(r1.equals(r2));
 
         // test .compareTo()
