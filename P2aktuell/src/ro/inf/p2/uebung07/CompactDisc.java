@@ -40,20 +40,27 @@ public class CompactDisc implements Comparable<CompactDisc> {
         return label;
     }
 
-    private String removeArticle(String s) {
-
-        return s.replaceAll("(?i)^der\\s+|^die\\s+|^das\\s+|^ein\\s+|^eine\\s+|^einer\\s+|^eines\\s+|^the\\s+|^a\\s+", "");
-
+    private String rmArticle(String s) {
+        return s.replaceAll("(?i)^der\\s+|^die\\s+|^das\\s+|^ein\\s+|^eine\\s+|^einer\\s+|^eines\\s+|^the\\s+|^a\\s+",
+                "");
     }
 
     @Override
     public boolean equals(Object o) {
+        String thisArtist, thisTitle, thatArtist, thatTitle;
+
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
         CompactDisc that = (CompactDisc) o;
 
-        return artist.toLowerCase().equals(that.artist.toLowerCase()) && title.toLowerCase().equals(that.title.toLowerCase());
+        thisArtist = artist.toLowerCase();
+        thisTitle = title.toLowerCase();
+
+        thatArtist = that.artist.toLowerCase();
+        thatTitle = that.title.toLowerCase();
+
+        return thisArtist.equals(thatArtist) && thisTitle.equals(thatTitle);
     }
 
     @Override
@@ -75,8 +82,13 @@ public class CompactDisc implements Comparable<CompactDisc> {
 
     @Override
     public int compareTo(CompactDisc o) {
+        String thisArtist, thatArtist;
+
         if (equals(o)) return 0;
 
-        return removeArticle(artist).toLowerCase().compareTo(removeArticle(o.getArtist()).toLowerCase());
+        thisArtist = rmArticle(artist).toLowerCase();
+        thatArtist = rmArticle(o.getArtist()).toLowerCase();
+
+        return thisArtist.compareTo(thatArtist);
     }
 }
