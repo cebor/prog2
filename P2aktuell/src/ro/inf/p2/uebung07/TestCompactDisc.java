@@ -22,7 +22,7 @@ public class TestCompactDisc extends TestCase {
 	private CompactDisc cd7;
 	private CompactDisc cd8;
 
-	private static Logger logger = Logger.getLogger(TestCompactDisc.class.getName());;
+	private static Logger logger = Logger.getLogger(TestCompactDisc.class.getName());
 
 	public void setUp() {
 		cd1 = new CompactDisc("lena", "My Cassette Player", 2011, "Universal Music Domestic Pop");
@@ -109,14 +109,23 @@ public class TestCompactDisc extends TestCase {
 
 	public void testErscheinungsjahrComparator() {
 		// einfache Test
+        ErscheinungsjahrComparator ec = new ErscheinungsjahrComparator();
+        assertTrue(ec.compare(cd1, cd1) == 0);
+        assertTrue(ec.compare(cd3, cd3) == 0);
+        assertTrue(ec.compare(cd1, cd2) > 0);
+        assertTrue(ec.compare(cd2, cd1) < 0);
 
-		// TODO
-		fail();
 
 		// Test mit Arrays.sort
-
-		// TODO
-		fail();
+        CompactDisc[] cds = { cd6, cd5, cd4, cd3, cd2, cd1, cd7 };
+		Arrays.sort(cds, ec);
+        assertTrue(cds[0] == cd3);
+        assertTrue(cds[1] == cd4);
+        assertTrue(cds[2] == cd2);
+        assertTrue(cds[3] == cd6);
+        assertTrue(cds[4] == cd5);
+        assertTrue(cds[5] == cd7);
+        assertTrue(cds[6] == cd1);
 
 		logger.info("testErscheinungsjahrComparator erfolgreich");
 	}
