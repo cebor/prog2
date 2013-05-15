@@ -41,8 +41,7 @@ public class CompactDisc implements Comparable<CompactDisc> {
     }
 
     private String rmArticle(String s) {
-        return s.replaceAll("(?i)^der\\s+|^die\\s+|^das\\s+|^ein\\s+|^eine\\s+|^einer\\s+|^eines\\s+|^the\\s+|^a\\s+",
-                "");
+        return s.replaceAll("^der\\s+|^die\\s+|^das\\s+|^ein\\s+|^eine\\s+|^einer\\s+|^eines\\s+|^the\\s+|^a\\s+", "");
     }
 
     @Override
@@ -86,8 +85,8 @@ public class CompactDisc implements Comparable<CompactDisc> {
 
         if (equals(o)) return 0;
 
-        thisArtist = rmArticle(artist).toLowerCase();
-        thatArtist = rmArticle(o.getArtist()).toLowerCase();
+        thisArtist = rmArticle(artist.toLowerCase());
+        thatArtist = rmArticle(o.getArtist().toLowerCase());
 
         return thisArtist.compareTo(thatArtist);
     }
