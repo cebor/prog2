@@ -9,6 +9,9 @@ package ro.inf.p2.uebung07;
  */
 public class CompactDisc implements Comparable<CompactDisc> {
 
+    private final String regex = "(?i)^der\\s+|^die\\s+|^das\\s+|^ein\\s+|^eine\\s+|" +
+            "^einer\\s+|^eines\\s+|^the\\s+|^a\\s+";
+
     private String artist;
     private String title;
 
@@ -41,8 +44,7 @@ public class CompactDisc implements Comparable<CompactDisc> {
     }
 
     private String rmArticle(String s) {
-        return s.replaceAll("(?i)^der\\s+|^die\\s+|^das\\s+|^ein\\s+|^eine\\s+|^einer\\s+|^eines\\s+|^the\\s+|^a\\s+",
-                "");
+        return s.replaceAll(regex, "");
     }
 
     @Override
