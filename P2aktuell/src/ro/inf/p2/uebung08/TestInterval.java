@@ -1,7 +1,7 @@
 /**
  * Created on 	11.05.2010
  * @author  	Brm / MD nach Vorlagen von Huw / Sid / Weigend
- * Zweck:		JUnit Test für Interval (Comparable, Polymorphismus)
+ * Zweck:		JUnit Test fï¿½r Interval (Comparable, Polymorphismus)
  */
 package ro.inf.p2.uebung08;
 

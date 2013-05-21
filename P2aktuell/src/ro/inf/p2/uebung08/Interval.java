@@ -1,15 +1,15 @@
 /**
  * Created on 	27.04.2010
  * @author	 	BrM / MD nach Vorlagen von Hue / Sid
- * Zweck:		Beispiel für Nutzung des Interfaces Comparable	
+ * Zweck:		Beispiel fï¿½r Nutzung des Interfaces Comparable	
  */
 package ro.inf.p2.uebung08;
 
 /**
- * Klasse für Intervalle definiert durch eine untere und obere Grenze.
+ * Klasse fï¿½r Intervalle definiert durch eine untere und obere Grenze.
  * <p>
- * Die Grenzen müssen das Interface Comparable implementieren.
- * Eine Überprüfung ob die untere Grenze kleiner als die obere
+ * Die Grenzen mï¿½ssen das Interface Comparable implementieren.
+ * Eine ï¿½berprï¿½fung ob die untere Grenze kleiner als die obere
  * Grenze ist findet nicht statt.
  */
 public class Interval {
@@ -54,7 +54,7 @@ public class Interval {
 
 	/**
      * @param v das andere Intervall
-     * @return true, wenn this das andere Intervall enthält
+     * @return true, wenn this das andere Intervall enthï¿½lt
      */
 	public boolean contains(Interval v) {
 		return false; // TODO
@@ -84,7 +84,7 @@ public class Interval {
 	
 	/**
 	 *
-	 * @return String-Repräsentation vom Intervall
+	 * @return String-Reprï¿½sentation vom Intervall
 	 */
 	public String toString() {
 		return super.toString(); // TODO
