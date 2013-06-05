@@ -1,6 +1,11 @@
 P2aktuell.iml
-.idea/
-out/
+P2aktuell.eml
+.project
+.classpath
+/.idea/
+/out/
+/P2aktuell/bin
+
 
 *.class
 

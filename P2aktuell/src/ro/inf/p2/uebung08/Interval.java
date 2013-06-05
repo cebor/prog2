@@ -6,10 +6,10 @@
 package ro.inf.p2.uebung08;
 
 /**
- * Klasse f�r Intervalle definiert durch eine untere und obere Grenze.
+ * Klasse für Intervalle definiert durch eine untere und obere Grenze.
  * <p>
- * Die Grenzen m�ssen das Interface Comparable implementieren.
- * Eine �berpr�fung ob die untere Grenze kleiner als die obere
+ * Die Grenzen müssen das Interface Comparable implementieren.
+ * Eine Überprüfung ob die untere Grenze kleiner als die obere
  * Grenze ist findet nicht statt.
  */
 public class Interval {
@@ -54,7 +54,7 @@ public class Interval {
 
 	/**
      * @param v das andere Intervall
-     * @return true, wenn this das andere Intervall enth�lt
+     * @return true, wenn this das andere Intervall enthült
      */
 	public boolean contains(Interval v) {
 		return false; // TODO
@@ -84,7 +84,7 @@ public class Interval {
 	
 	/**
 	 *
-	 * @return String-Repr�sentation vom Intervall
+	 * @return String-Repräsentation vom Intervall
 	 */
 	public String toString() {
 		return super.toString(); // TODO
